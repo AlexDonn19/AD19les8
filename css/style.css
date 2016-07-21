@@ -2577,7 +2577,6 @@ li.menu__item:last-child a.footer_size {
         display: none;
     }
 }
-
 @media (max-width: 320px) {
     .hide_320 {
         display: none;
