@@ -1416,7 +1416,7 @@ a.more_melody {
     width: 427px;
     height: 272px;
     box-sizing: border-box;
-    padding: 26px 28px 28px 38px;
+    padding: 24px 28px 28px 38px;
     background-color: #fff;
     box-shadow: 0 1px 1px 1px rgb(239, 239, 239);
     z-index: 2;
@@ -2025,7 +2025,7 @@ a.up_third:before {
 .logo_line {
     display: block;
     width: 2400px;
-    height: 120px;
+    height: 118px;
     margin: 0 auto;
     box-sizing: border-box;
     padding-left: 813px;
