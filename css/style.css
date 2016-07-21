@@ -802,9 +802,10 @@ a.iPhone__button {
        top: 244px;
     }
 }
-@media (max-width: 203px) {
+@media (max-width: 320px) {
     .page-control {
-       top: 244px;
+       top: 203px;
+       background: none;
     }
 }
 .slider-control {
@@ -1376,7 +1377,7 @@ a.more_melody {
 @media (max-width: 320px) {
     .updates {
         padding: 69px 1005px 0 1059px;
-        height: 788px;
+        height: 785px;
     }
 }
 
@@ -2064,7 +2065,7 @@ a.up_third:before {
 
 @media (max-width: 320px) {
     .logo_line {
-        height: 422px;
+        height: 419px;
         padding-left: 1110px;
         padding-right: 1000px;
         padding-top: 29px;
