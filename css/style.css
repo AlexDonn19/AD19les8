@@ -1344,7 +1344,7 @@ a.more_melody {
     display: block;
     position: relative;
     width: 2400px;
-    height: 488px;
+    height: 485px;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 100px 700px 0 743px;
@@ -2014,7 +2014,7 @@ a.up_third:before {
 
 /* ------------------------------  LOGO LINE  -------------------------------- */
 
-.page-lolgo {
+.page-logo {
     display: block;
     width: 100%;
     border-top: 1px solid #fefefe;
@@ -2435,7 +2435,7 @@ footer {
     overflow: hidden;
     padding-left: 719px;
     font-size: 20px;
-    padding-top: 43px;
+    padding-top: 41px;
 }
 
 .page-footer:before {
