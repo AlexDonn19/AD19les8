@@ -77,7 +77,6 @@ header {
     background: url('../img/bg.png');
     background-size: cover;
     background-position: 0 0px;
-    /*height: 2306px;*/
 }
 
 @media (max-width: 768px) {
@@ -622,7 +621,8 @@ h3.slider__describe {
     height: 434px;
     box-sizing: border-box;
     background-image: url('../img/iPhone4.png');
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 197px 434px;         /* cover; */
     text-align: center;
     padding-top: 152px;
     z-index: 4;
@@ -643,6 +643,7 @@ h3.slider__describe {
         width: 138px;
         height: 304px;
         padding-top: 106px;
+        background-size: 138px 304px;
     }
 }
 
@@ -678,6 +679,7 @@ h3.slider__describe {
     top: -12px;
     width: 120px;
     height: 260px;
+    background-size: 120px 260px;   /* del */
     z-index: 2;
     -webkit-filter: blur(2px);
     -moz-filter: blur(2px);
@@ -698,6 +700,7 @@ h3.slider__describe {
         top: -42px;
         width: 80px;
         height: 183px;
+        background-size: 80px 183px;
     }
 }
 
@@ -907,19 +910,22 @@ nav.paginator ul {
 }
 
 .panigator__item {
-    display: inline-block;
+    display: block;
     width: 17px;
     height: 17px;
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.302);
-    margin-right: 3px;
+    float: left;
+    margin-left: 4px;
+    margin-right: 5px;
 }
 
 @media (max-width: 480px) {
     .panigator__item {
         width: 15px;
         height: 15px;
-        margin-right: 5px;
+        margin-left: 3px;
+        margin-right: 3px;
     }
 }
 
@@ -927,48 +933,60 @@ nav.paginator ul {
     .panigator__item {
         width: 16px;
         height: 16px;
-        margin-right: 5px;
+        margin-left: 3px;
+        margin-right: 3px;
     }
     .slider .panigator__item:last-child {
-        position: relative;
-        left: -2px;
+        /*position: relative;
+        left: -2px;*/
         margin-right: 0px;
     }
 }
 
-li.panigator__item.active {
+li.panigator__item.active,
+li.panigator__item:hover {
     position: relative;
-    top: 4px;
-    left: 0px;
+    margin-top: 3px;
     background: linear-gradient(to top, rgb(222, 222, 222), rgb(249, 249, 249));
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    margin-right: 7px;
+    margin-left: 7px;
     border: 2px solid white;
     box-shadow: 0 0 0px 3px rgba(0, 0, 0, 0.302);
 }
 
 @media (max-width: 768px) {
-    li.panigator__item.active {
-        width: 8px;
-        height: 8px;
-        top: 4px;
+    li.panigator__item.active,
+    li.panigator__item:hover {
+        /*width: 8px;
+        height: 8px;*/
+        /*top: 4px;*/
+        margin-top: 3px;
     }
 }
 
 @media (max-width: 480px) {
-    li.panigator__item.active {
-        width: 5px;
-        height: 5px;
-        top: 5px;
+    li.panigator__item.active,
+    li.panigator__item:hover {
+        width: 9px;
+        height: 9px;
+        margin-left: 6px;
+        margin-right: 6px;
+        margin-top: 3px;
     }
 }
 
 @media (max-width: 320px) {
-    li.panigator__item.active {
-        width: 6px;
-        height: 6px;
-        top: 5px;
-        margin-right: 5px;
+    li.panigator__item.active,
+    li.panigator__item:hover {
+        width: 10px;
+        height: 10px;
+        /*top: 5px;*/
+        margin-top: 3px;
+        margin-left: 6px;
+        margin-right: 6px;
     }
 }
 
@@ -1683,79 +1701,94 @@ p.text {
 
 /* navigation news */
 
-.news nav.paginator {
+nav.paginator_news {
+    position: absolute;
+    width: 150px;
+    height: 19px;
     top: 295px;
     left: 170px;
+    z-index: 5;
 }
 
+
 @media (max-width: 768px) {
-    .news nav.paginator {
+    .news nav.paginator_news {
         left: 115px;
     }
 }
 
 @media (max-width: 480px) {
-    .news nav.paginator {
+    .news nav.paginator_news {
         top: 294px;
         left: 161px;
     }
 }
 
 @media (max-width: 320px) {
-    .news nav.paginator {
+    .news nav.paginator_news {
         left: 121px;
         top: 295px;
     }
 }
 
-.news .panigator__item {
+.panigator_news__item {
+    display: block;
+    width: 17px;
+    height: 17px;
     border: 1px solid #e8e8e8;
+    border-radius: 50%;
+    float: left;
     background: #fff;
+    margin-left: 2px;
     margin-right: 2px;
 }
+
 @media (max-width: 768px) {
-    .news .panigator__item {
-        margin-right: 0px;
+    .panigator_news__item {
+        margin-left: 2px;
+        margin-right: 2px;
     }
 }
 @media (max-width: 480px) {
-    .news .panigator__item {
+    .panigator_news__item {
         margin-right: 2px;
     }
 }
 @media (max-width: 320px) {
-    .news .panigator__item {
-        margin-right: 0px;
+    .panigator_news__item {
+        margin-left: 2px;
+        margin-right: 2px;
     }
 }
 
-.news li.panigator__item.active {
+.panigator_news__item.active,
+.panigator_news__item:hover  {
     background: linear-gradient(to top, rgba(74, 74, 74, 1), rgba(101, 101, 101, 1));
     border: 2px solid #fff;
+    box-sizing: border-box;
     box-shadow: inset 0 2px 0px 1px rgba(136, 136, 136, 0.302), 0 0px 0px 1px rgba(232, 232, 232, 0.9), 0 0px 0px 0.5px rgba(255, 255, 255, 1);
-    width: 14px;
-    height: 14px;
-    top: 2px;
+    width: 17px;
+    height: 17px;
+    margin-top: 1px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 @media (max-width: 768px) {
-    .news li.panigator__item.active {
-        top: 1px;
+    .panigator_news__item.active {
+        margin-top: 1px;
     }
 }
 @media (max-width: 480px) {
-    .news li.panigator__item.active {
-        width: 11px;
-        height: 11px;
-        top: 2px;
+    .panigator_news__item.active {
+        margin-top: 1px;
     }
 }
 
 @media (max-width: 320px) {
-    .news li.panigator__item.active {
-        width: 12px;
-        height: 12px;
-        top: 2px;
-        left: 2px;
+    .panigator_news__item.active {
+        margin-top: 1px;
+        margin-left: 2px;
+        margin-right: 2px;
     }
 }
 
@@ -2237,7 +2270,7 @@ a.up_third:before {
 }
 
 .logo_big .logo_six {
-    background-position: -690px 0px;
+    background-position: -691px 0px;
     width: 90px;
 }
 
@@ -2460,7 +2493,6 @@ footer {
     width: 1063px;
     height: 10px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9));
-    ;
     box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.7);
     border-bottom-left-radius: 2250px 58px;
     border-bottom-right-radius: 2250px 58px;
