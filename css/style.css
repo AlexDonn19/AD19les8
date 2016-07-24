@@ -66,10 +66,12 @@ header {
     display: block;
     position: relative;
     width: 100%;
+    /*min-width: 2400px;*/
     background: rgb(151,134,156);
 }
 .page-header {
     display: block;
+    /*width: 100%;*/
     height: 846px;
     margin: 0 auto;
     background: url('../img/bg.png');
@@ -84,27 +86,28 @@ header {
 }
 @media (max-width: 768px) {
     .page-header {
-        width: 768px;
+        width: 751px;     /*768px;*/
         height: 798px;
     }
 }
 
 @media (max-width: 480px) {
     .page-header {
-        width: 480px;
+        width: 463px;
         height: 548px;
     }
 }
 
 @media (max-width: 320px) {
     .page-header {
-        width: 320px;
+        width: 303px;
         height: 516px;
     }
 }
 /*--- центрирование HEADER -------  */
 .page-header-line {
     width: 1020px;
+    /*width: 960px;*/
     padding-left: 30px;
     padding-right: 30px;
     box-sizing: border-box;
@@ -124,11 +127,6 @@ header {
 @media (max-width: 320px) {
     .page-header-line {width: 100%;}
 }
-
-
-
-
-
 
 
 /* ---------- top  line ----------- */
@@ -454,7 +452,9 @@ ul.submenu li:last-child a {
 .slider {
     display: block;
     position: relative;
+    /*width: 960px;*/
     margin: 0 auto;
+    /*padding: 0 720px;*/
     height: 527px;
 }
 
@@ -596,8 +596,8 @@ h3.slider__describe {
 @media (max-width: 480px) {
     h3.slider__describe {
         font-size: 18px;
-        width: 275px;
-        height: 28px;
+        width: 206px;
+        height: 22px;
     }
     .slider__text.hide_480 {
         display: none;
@@ -667,7 +667,7 @@ h3.slider__describe {
 
 @media (max-width: 480px) {
     .iPhone {
-        left: 271px;
+        left: 261px;
         top: -102px;
         width: 138px;
         height: 304px;
@@ -725,7 +725,7 @@ h3.slider__describe {
 
 @media (max-width: 480px) {
     .iPhone__small {
-        left: 223px;
+        left: 213px;
         top: -42px;
         width: 80px;
         height: 183px;
@@ -835,19 +835,19 @@ a.iPhone__button {
 }
 @media (max-width: 768px) {
     .page-control {
-       width: 768px;
+       width: 751px;
        top: 244px;
     }
 }
 @media (max-width: 480px) {
     .page-control {
-       width: 480px;
+       width: 463px;
        top: 204px;
     }
 }
 @media (max-width: 320px) {
     .page-control {
-        width: 320px;
+        width: 303px;
         top: 203px;
         background: none;
     }
@@ -881,9 +881,6 @@ a.iPhone__button {
 @media (max-width: 320px) {
     .page-control-line {width: 100%;}
 }
-
-
-
 
 
 .slider-control {
@@ -1082,13 +1079,13 @@ main {
     .page-about {min-width: 1020px;}
 }
 @media (max-width: 768px) {
-    .page-about {width: 768px;}
+    .page-about {width: 751px;}
 }
 @media (max-width: 480px) {
-    .page-about {width: 480px;}
+    .page-about {width: 463px;}
 }
 @media (max-width: 320px) {
-    .page-about {width: 320px;}
+    .page-about {width: 303px;}
 }
 
 .about_line {
@@ -1464,13 +1461,13 @@ a.more_melody {
     .page-updates {min-width: 1020px;}
 }
 @media (max-width: 768px) {
-    .page-updates {width: 768px;}
+    .page-updates {width: 751px;}
 }
 @media (max-width: 480px) {
-    .page-updates {width: 480px;}
+    .page-updates {width: 463px;}
 }
 @media (max-width: 320px) {
-    .page-updates {width: 320px;}
+    .page-updates {width: 303px;}
 }
 
 .updates {
@@ -1521,12 +1518,13 @@ a.more_melody {
     display: block;
     position: absolute;
     content: '';
-    width: 40%;
+    width: 80%;
     height: 12px;
     background: linear-gradient(to top, rgba(249, 249, 249, 0.502), rgba(209, 209, 209, 0.502));
     border-bottom-left-radius: 1670px 58px;
     border-bottom-right-radius: 1670px 58px;
     top: 1px;
+    left: 10%;
 }
 
 
@@ -1538,7 +1536,7 @@ a.more_melody {
     box-sizing: border-box;
     padding-left: 0px;
     padding-bottom: 0px;
-    margin-right: 54px;
+    margin-right: 35px;
     vertical-align: top;
 }
 
@@ -1690,7 +1688,6 @@ h4, .news__head h5 {
     font-size: 30px;
     font-family: "league_gothicregular";
     font-weight: 200;
-    /*text-transform: uppercase;*/
     text-align: left;
 }
 
@@ -1933,6 +1930,7 @@ nav.paginator_news {
         height: 18px;
         padding-bottom: 9px;
         overflow: hidden;
+        text-align: left;
     }
 }
 
@@ -2191,13 +2189,13 @@ a.up_third:before {
     .page-logo {min-width: 1020px;}
 }
 @media (max-width: 768px) {
-    .page-logo {width: 768px;}
+    .page-logo {width: 751px;}
 }
 @media (max-width: 480px) {
-    .page-logo {width: 480px;}
+    .page-logo {width: 463px;}
 }
 @media (max-width: 320px) {
-    .page-logo {width: 320px;}
+    .page-logo {width: 303px;}
 }
 
 
@@ -2282,7 +2280,7 @@ a.up_third:before {
 @media (max-width: 320px) {
     .logo_big li:first-child {
         margin-left: -8px;
-        margin-right: 50px;
+        margin-right: 33px;
     }
 }
 
@@ -2305,7 +2303,7 @@ a.up_third:before {
 
 .logo_big li:nth-child(3) {
     width: 73px;
-    margin-right: 51px;
+    margin-right: 36px;
 }
 
 @media (max-width: 768px) {
@@ -2321,7 +2319,7 @@ a.up_third:before {
 
 @media (max-width: 768px) {
     .logo_big li:nth-child(4) {
-        margin-right: 37px;
+        margin-right: 28px;
     }
 }
 
@@ -2332,7 +2330,7 @@ a.up_third:before {
 
 @media (max-width: 768px) {
     .logo_big li:nth-child(5) {
-        margin-right: 10px;
+        margin-right: 5px;
     }
 }
 @media (max-width: 480px) {
@@ -2344,7 +2342,7 @@ a.up_third:before {
 @media (max-width: 320px) {
     .logo_big li:nth-child(5) {
         position: relative;
-        margin-right: 16px;
+        margin-right: 0px;
         left: -34px;
         top: -19px;
     }
@@ -2426,13 +2424,13 @@ a.up_third:before {
     .page-last-line  {min-width: 1020px;}
 }
 @media (max-width: 768px) {
-    .page-last-line  {width: 768px;}
+    .page-last-line  {width: 751px;}
 }
 @media (max-width: 480px) {
-    .page-last-line  {width: 480px;}
+    .page-last-line  {width: 463px;}
 }
 @media (max-width: 320px) {
-    .page-last-line  {width: 320px;}
+    .page-last-line  {width: 303px;}
 }
 
 .last-line {
@@ -2490,9 +2488,9 @@ a.up_third:before {
 .last-line__item:nth-child(3){
     margin-right: 0px;
 }
-@media (max-width: 960px) {
+@media (max-width: 960px) and (min-width: 769px) {
     .last-line__item:nth-child(3) {
-        margin-right: 50px;
+        margin-right: 30px;
     }
 }
 @media (max-width: 768px) {
@@ -2505,7 +2503,7 @@ a.up_third:before {
 @media (max-width: 480px) {
     .last-line__item {
         display: block;
-        width: 450px;
+        width: 425px;
         height: 185px;
         margin: 0 auto;
     }
@@ -2531,7 +2529,7 @@ a.up_third:before {
 @media (max-width: 768px) {
     .show-768 {
         display: inline-block;
-        margin-right: 50px;
+        margin-right: 30px;
     }
 }
 
@@ -2614,7 +2612,7 @@ a.up_third:before {
 
 @media (max-width: 480px) {
     .last-line__block {
-        width: 443px;
+        width: 429px;
         height: 100px;
     }
 }
@@ -2634,8 +2632,10 @@ a.up_third:before {
 }
 @media (max-width: 480px) {
     .last-line__item h4 {
+        width: 200px;
         letter-spacing: -0.01px;
         margin-bottom: 7px;
+        margin-right: 0;
     }
 }
 
@@ -2689,13 +2689,24 @@ footer {
     .page-footer {min-width: 1020px;}
 }
 @media (max-width: 768px) {
-    .page-footer {width: 768px;}
+    .page-footer {width: 751px;
+        padding-top: 40px;
+        height: 201px;
+        }
 }
-@media (max-width: 480px) {
-    .page-footer {width: 480px;}
+@media (max-width: 480px) and (min-width: 321px) {
+    .page-footer {width: 463px;
+        padding-top: 41px;
+        height: 201px;
+        text-align: center;
+    }
 }
 @media (max-width: 320px) {
-    .page-footer {width: 320px;}
+    .page-footer {width: 303px;
+        padding-top: 9px;
+        height: 201px;
+        text-align: center;
+    }
 }
 
 .footer-line {
@@ -2718,28 +2729,7 @@ footer {
     .footer-line {width: 100%;}
 }
 
-@media (max-width: 768px) {
-    .page-footer {
-        height: 200px;
-        padding-top: 40px;
-        height: 201px;
-    }
-}
 
-@media (max-width: 480px) and (min-width: 321px) {
-    .page-footer {
-        padding-top: 41px;
-        height: 201px;
-        text-align: center;
-    }
-}
-@media (max-width: 320px) {
-    .page-footer {
-        padding-top: 9px;
-        height: 201px;
-        text-align: center;
-    }
-}
 .footer-menu {
     display: inline-block;
     position: relative;

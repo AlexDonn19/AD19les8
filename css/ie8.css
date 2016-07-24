@@ -1,0 +1,115 @@
+header {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-width: 2400px;
+    background: rgb(151,134,156);
+}
+
+@media screen and (max-width: 768px) {
+    	.page-header {height: 798px;}}
+@media screen and (max-width: 480px) {
+    	.page-header {height: 548px;}}
+@media screen and (max-width: 320px) {
+   		.page-header {height: 516px;}}
+
+.logo_top-line {
+    float: left;
+    margin-right: 150px;
+}
+.menu_top {
+    margin-top: 20px;
+}
+.menu__item {
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.first_link_top {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+
+.iPhone__small {
+    left: 621px;
+    top: -12px;
+    width: 130px;
+    height: 268px;
+    background-image: url('../img/iPhone4-copy.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+
+.page-about {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#745083',
+            endColorstr='#33263a',GradientType=0);
+}
+
+
+.about__item {
+    display: inline-block;
+    float: left;
+}
+
+
+.news {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+
+
+
+.logo_big li {
+    display: block;
+    width: 70px;
+    margin-right: 61px;
+    float: left;
+}
+
+
+.last-line__item {
+    float: left;
+    margin-right: 55px;
+}
+
+
+
+
+footer {
+    z-index: 1;
+    display: block;
+    position: relative;
+    width: 100%;
+    background: rgb(121,109,127);
+}
+.page-footer:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 114px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: url('../img/bg.png');
+    background-size: 100% 114px;
+    background-position: 0 -673px;
+    filter: progid:DXImageTransform.Microsoft.Blur(pixelRadius=5);
+    z-index: 1;
+}
+
+
+
+.design {
+    display: inline-block;
+    float: left;
+}
