@@ -101,7 +101,7 @@ header {
 
 /*--- центрирование HEADER -------  */
 .page-header-line {
-    width: 100%;
+    width: 960px;
     /*width: 1020px;*/
     /*padding-left: 30px;
     padding-right: 30px;*/
@@ -971,7 +971,7 @@ nav.paginator {
     position: absolute;
     left: 554px;
     bottom: 0px;
-    width: 90px;
+    width: 120px;
     height: 19px;
     z-index: 5;
 }
@@ -1124,7 +1124,7 @@ main {
 .about_line {
     display: block;
     position: relative;
-    width: 100%;  /* 1020px;*/
+    width: 960px;  /* 1020px;*/
     padding-left: 30px;
     padding-right: 30px;
     height: 341px;
